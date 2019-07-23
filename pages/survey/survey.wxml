@@ -1,0 +1,62 @@
+<custom-block title="签证面试/递交材料日期">
+  <van-cell title="日期" value="点击选择日期" bind:click="toggleInterviewDatePopup"/>
+  <van-popup show="{{ show.interviewDatePopup }}" bind:close="toggleInterviewDatePopup" position="bottom">
+    <van-datetime-picker
+      type="date"
+      value="{{ minDate }}"
+      bind:input="onDateTimePickerInput"
+      bind:confirm="onInterviewDateConfirm"
+      bind:cancel="onInterviewDateCancel"
+      min-date="{{ minDate }}"
+      max-date="{{ maxDate }}"
+      formatter="{{ formatter }}"
+      item-height="35"
+      type="date"
+      visible-item-count="3"
+    />
+  </van-popup>
+</custom-block>
+
+<custom-block title="签证种类">
+  <van-cell title="签证种类" value="点击选择签证" bind:click="toggleVisaCategoryPopup"/>
+  <van-popup show="{{ show.visaCategoryPopup }}" bind:close="toggleVisaCategoryPopup" position="bottom">
+  <van-picker 
+    columns="{{ visaCategories }}" 
+    bind:change="onVisaCategoryChange"
+    visible-item-count="4"
+    item-height="40"
+    bind:confirm="onVisaCategoryConfirm"
+    bind:cancel="onVisaCategoryCancel"
+  />
+  </van-popup>
+</custom-block>
+
+<!-- <custom-block title="签证大使馆">
+  <van-cell title="大使馆" value="点击选择使馆" bind:click="toggleConsulatePopup"/>
+  <van-popup show="{{ show.consulatePopup }}" bind:close="toggleConsulatePopup" position="bottom">
+    <van-picker 
+      columns="{{ consulateLocations }}" 
+      bind:change="onConsulateLocationChange"
+      visible-item-count="4"
+      item-height="40"
+      show-toolbar="true"
+      bind:confirm="onConsulateConfirm"
+      bind:cancel="onConsulateCancel"
+    />
+  </van-popup>
+</custom-block> -->
+
+<custom-block title="签证大使馆">
+  <van-cell title="大使馆" value="点击选择使馆" bind:click="toggleConsulatePopup"/>
+  <van-popup show="{{ show.consulatePopup }}" bind:close="toggleConsulatePopup" position="bottom">
+    <van-picker 
+      columns="{{ consulateLocations }}" 
+      bind:change="onConsulateLocationChange"
+      visible-item-count="4"
+      item-height="40"
+      show-toolbar="true"
+      bind:confirm="onConsulateConfirm"
+      bind:cancel="onConsulateCancel"
+    />
+  </van-popup>
+</custom-block>

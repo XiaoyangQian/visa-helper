@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "输入签证信息",
+  "usingComponents": {
+        "van-button": "vant-weapp/button/index",
+        "van-popup": "vant-weapp/popup/index",
+        "van-cell": "vant-weapp/cell/index",
+        "van-picker": "vant-weapp/picker/index",
+        "van-datetime-picker": "vant-weapp/datetime-picker/index",
+        "custom-block": "../../components/custom-block/custom-block"
+  }
+}
