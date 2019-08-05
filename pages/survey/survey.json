@@ -6,6 +6,8 @@
         "van-cell": "vant-weapp/cell/index",
         "van-picker": "vant-weapp/picker/index",
         "van-datetime-picker": "vant-weapp/datetime-picker/index",
-        "custom-block": "../../components/custom-block/custom-block"
+        "van-radio": "vant-weapp/radio/index",
+        "van-radio-group": "vant-weapp/radio-group/index",
+        "custom-block": "../../components/custom-block/custom-block"       
   }
 }

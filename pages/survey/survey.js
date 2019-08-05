@@ -101,6 +101,16 @@ Page({
     this.setData({
       [`show.consulatePopup`]: false
     })
+  },
+  onCheckStatusChange(event){
+    this.setData({
+      checkeStatus: event.detail
+    });
+  },
+  onVisaStatusChange(event) {
+    this.setData({
+      visaStatus: event.detail
+    });
   }
 });
 
